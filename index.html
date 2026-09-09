@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#03111d" />
+  <meta name="description" content="Antoine Pierrard — R&D engineer in neuroengineering, machine learning and embedded systems." />
+  <title>Antoine Pierrard — Neuroengineering & R&D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="identity" href="#top" aria-label="Back to top">
+      <span>Antoine <strong>Pierrard</strong></span>
+      <small>R&amp;D Engineer — Neuroengineering · Machine Learning · Embedded Systems</small>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a class="active" href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="downloads/Antoine-Pierrard-CV-2026.pdf" target="_blank">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="about">
+      <div class="intro reveal">
+        <p class="eyebrow">Bridging brains and technology</p>
+        <h1>From neural signals<br>to <span>real-world impact.</span></h1>
+        <p class="lede">I design, analyze and build systems at the intersection of neuroscience, signal processing, embedded electronics and intelligent machines.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore projects <span>→</span></a>
+          <a class="button secondary" href="downloads/Antoine-Pierrard-CV-2026.pdf" download>Download CV <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="brain-stage" aria-label="Interactive map of Antoine's expertise">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="brain-glow" aria-hidden="true"></div>
+        <img class="brain" src="assets/holographic-brain.png" alt="A holographic human brain with illuminated regions" />
+
+        <svg class="neural-links" viewBox="0 0 1000 700" aria-hidden="true">
+          <path class="link microns-link" d="M190 135 C300 135 315 205 430 215" />
+          <path class="link inria-link" d="M810 165 C710 165 700 215 625 230" />
+          <path class="link vision-link" d="M170 355 C285 355 330 330 420 325" />
+          <path class="link micromix-link" d="M830 380 C735 380 720 340 650 335" />
+          <path class="link tipe-link" d="M790 575 C705 575 680 490 575 470" />
+          <circle class="node microns-link" cx="430" cy="215" r="7" />
+          <circle class="node inria-link" cx="625" cy="230" r="7" />
+          <circle class="node vision-link" cx="420" cy="325" r="7" />
+          <circle class="node micromix-link" cx="650" cy="335" r="7" />
+          <circle class="node tipe-link" cx="575" cy="470" r="7" />
+        </svg>
+
+        <button class="hotspot cyan h1" data-project="microns" data-link="microns-link" aria-label="Open MICrONS project">
+          <span><em>01</em><strong>MICrONS Connectome</strong><small>Neuroengineering · ML</small></span>
+        </button>
+        <button class="hotspot blue h2" data-project="inria" data-link="inria-link" aria-label="Open Inria signal processing project">
+          <span><em>02</em><strong>Physiological Signals</strong><small>EEG · ECG · Explainable AI</small></span>
+        </button>
+        <button class="hotspot green h3" data-project="vision" data-link="vision-link" aria-label="Open computer vision project">
+          <span><em>03</em><strong>Computer Vision</strong><small>Patient tracking · ER flow</small></span>
+        </button>
+        <button class="hotspot amber h4" data-project="micromix" data-link="micromix-link" aria-label="Open MicroMix embedded systems project">
+          <span><em>04</em><strong>MicroMix</strong><small>Embedded systems · LabVIEW</small></span>
+        </button>
+        <button class="hotspot violet h5" data-project="tipe" data-link="tipe-link" aria-label="Open TIPE physics project">
+          <span><em>05</em><strong>Energy Recovery</strong><small>Physics · Prototyping</small></span>
+        </button>
+        <p class="brain-hint">Select a neural region to enter a project</p>
+      </div>
+
+      <blockquote class="quote reveal">
+        <b>“</b>
+        <p>Plutôt la tête<br>bien faite<br>que bien pleine</p>
+        <b>“</b>
+        <span></span>
+        <cite>Montaigne</cite>
+      </blockquote>
+      <div class="scroll-cue" aria-hidden="true"><span></span>Scroll to explore</div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Ideas turned into <span>working systems.</span></h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card microns reveal" id="microns" tabindex="0">
+          <div class="card-visual evidence-visual microns-shot"><img src="assets/evidence/representation.jpg" alt="MICrONS neuron positions colored by latent feature z1" /></div>
+          <div class="card-copy">
+            <p class="category">Neuroscience · Machine Learning</p>
+            <h3>MICrONS</h3>
+            <h4>Cortical connectivity in the visual cortex</h4>
+            <p>A feature-enhanced statistical model of brain connectivity from more than 11 million neuron pairs.</p>
+            <div class="metrics"><span><strong>11.6M</strong> pairs</span><span><strong>0.909</strong> AUC</span></div>
+            <button class="text-link" data-modal="microns">View project <span>→</span></button>
+          </div>
+        </article>
+
+        <article class="project-card inria reveal" id="inria" tabindex="0">
+          <div class="card-visual evidence-visual"><img src="assets/evidence/moi.jpg" alt="EEG acquisition during the Inria Paris-Saclay multimodal stress experiment" /></div>
+          <div class="card-copy">
+            <p class="category">Signal Processing · Explainable AI</p>
+            <h3>INRIA Paris-Saclay</h3>
+            <h4>Physiological signals &amp; machine learning</h4>
+            <p>Multimodal stress analysis and PPG modelling through visibility graphs and interpretable machine learning.</p>
+            <div class="metrics"><span><strong>32</strong> EEG channels</span><span><strong>4</strong> modalities</span></div>
+            <button class="text-link" data-modal="inria">View project <span>→</span></button>
+          </div>
+        </article>
+
+        <article class="project-card vision reveal" id="vision" tabindex="0">
+          <div class="card-visual evidence-visual reid-shot"><img src="assets/evidence/reid.png" alt="Multi-camera person re-identification and patient tracking prototype" /></div>
+          <div class="card-copy">
+            <p class="category">Computer Vision · Healthcare</p>
+            <h3>INRIA Nancy</h3>
+            <h4>Patient tracking in emergency care</h4>
+            <p>A camera network and re-identification pipeline designed to map patient journeys and improve hospital flow.</p>
+            <div class="metrics"><span><strong>YOLO</strong> detection</span><span><strong>MediaPipe</strong> features</span></div>
+            <button class="text-link" data-modal="vision">View project <span>→</span></button>
+          </div>
+        </article>
+
+        <article class="project-card micromix reveal" id="micromix" tabindex="0">
+          <div class="card-visual evidence-visual micromix-shot"><img src="assets/evidence/micromix-results.png" alt="Final MicroMix LabVIEW interface, experimental setup and recorded values" /></div>
+          <div class="card-copy">
+            <p class="category">Embedded Systems · Biomedical</p>
+            <h3>MicroMix</h3>
+            <h4>Automated cell sorting and control</h4>
+            <p>Low-level acquisition, inter-core communication and a LabVIEW interface for high-throughput cell screening.</p>
+            <div class="metrics"><span><strong>200 kHz</strong> sampling</span><span><strong>16-bit</strong> acquisition</span></div>
+            <button class="text-link" data-modal="micromix">View project <span>→</span></button>
+          </div>
+        </article>
+
+        <article class="project-card tipe reveal" id="tipe" tabindex="0">
+          <div class="card-visual evidence-visual tipe-shot"><img src="assets/evidence/tipe-results.png" alt="Elevator energy recovery prototype and experimental voltage curve" /></div>
+          <div class="card-copy">
+            <p class="category">Physics · Engineering</p>
+            <h3>TIPE</h3>
+            <h4>Energy recovery in elevators</h4>
+            <p>Magnetic braking, capacitor recovery and genetic optimisation combined in an experimental elevator model.</p>
+            <div class="metrics"><span><strong>97%</strong> slower fall</span><span><strong>10</strong> recovery cycles</span></div>
+            <button class="text-link" data-modal="tipe">View project <span>→</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="journey" id="journey">
+      <div class="section-heading reveal">
+        <p class="eyebrow">My path</p>
+        <h2>Engineering across <span>disciplines and borders.</span></h2>
+      </div>
+      <div class="timeline reveal">
+        <article><time>2026</time><h3>Bocconi · Politecnico di Milano</h3><p>Neural connectivity modelling using the MICrONS cortical connectome.</p></article>
+        <article><time>2025</time><h3>Inria · École Polytechnique</h3><p>Machine learning for physiological signal analysis and stress detection.</p></article>
+        <article><time>2025–26</time><h3>Polytechnique Montréal</h3><p>Academic exchange in electrical engineering, electronics and robotics.</p></article>
+        <article><time>2023–26</time><h3>Télécom Physique Strasbourg</h3><p>Engineering degree focused on information technology for healthcare.</p></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Let’s connect</p>
+        <h2>Building the medicine<br><span>of tomorrow.</span></h2>
+        <p>I’m interested in neuroengineering, brain–computer interfaces and medical R&amp;D opportunities.</p>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:antoine.pierrard.07@gmail.com">Start a conversation <span>↗</span></a>
+          <a class="contact-mail" href="mailto:antoine.pierrard.07@gmail.com">antoine.pierrard.07@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Antoine Pierrard</span>
+    <span>Research · Build · Learn · Improve</span>
+  </footer>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" aria-label="Close project details">×</button>
+    <div class="dialog-scroll">
+      <p class="eyebrow" id="dialog-tag"></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-subtitle" class="dialog-subtitle"></p>
+      <div id="dialog-metrics" class="dialog-metrics"></div>
+      <div id="dialog-body"></div>
+      <div id="dialog-video-container">
+      <iframe
+        id="dialog-video"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+      ></iframe>
+      </div>
+      <figure id="dialog-figure" class="dialog-figure">
+  <img id="dialog-image" class="dialog-image" alt="" />
+  <figcaption id="dialog-image-caption"></figcaption>
+</figure>
+      <div id="dialog-links" class="dialog-links"></div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
