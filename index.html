@@ -94,7 +94,7 @@
       </div>
       <div class="project-grid">
         <article class="project-card microns reveal" id="microns" tabindex="0">
-          <div class="card-visual evidence-visual microns-shot"><img src="assets/evidence/representation.jpg" alt="MICrONS neuron positions colored by latent feature z1" /></div>
+          <div class="card-visual connectome" aria-hidden="true"><canvas id="connectomeCanvas"></canvas></div>
           <div class="card-copy">
             <p class="category">Neuroscience · Machine Learning</p>
             <h3>MICrONS</h3>
@@ -106,7 +106,7 @@
         </article>
 
         <article class="project-card inria reveal" id="inria" tabindex="0">
-          <div class="card-visual evidence-visual"><img src="assets/evidence/moi.jpg" alt="EEG acquisition during the Inria Paris-Saclay multimodal stress experiment" /></div>
+          <div class="card-visual evidence-visual"><img src="assets/representation.jpg" alt="EEG acquisition during the Inria Paris-Saclay multimodal stress experiment" /></div>
           <div class="card-copy">
             <p class="category">Signal Processing · Explainable AI</p>
             <h3>INRIA Paris-Saclay</h3>
@@ -118,7 +118,7 @@
         </article>
 
         <article class="project-card vision reveal" id="vision" tabindex="0">
-          <div class="card-visual evidence-visual reid-shot"><img src="assets/evidence/reid.png" alt="Multi-camera person re-identification and patient tracking prototype" /></div>
+          <div class="card-visual tracking" aria-hidden="true"><div class="track-person"></div><div class="tracking-box"><span>Patient 07</span></div><div class="camera-grid"></div></div>
           <div class="card-copy">
             <p class="category">Computer Vision · Healthcare</p>
             <h3>INRIA Nancy</h3>
@@ -195,11 +195,16 @@
       <div id="dialog-metrics" class="dialog-metrics"></div>
       <div id="dialog-body"></div>
       <div id="dialog-video-container">
-      <iframe
-        id="dialog-video"
-        allow="autoplay; fullscreen"
-        allowfullscreen
-      ></iframe>
+        <figure class="dialog-video-figure">
+          <div class="dialog-video-frame">
+            <iframe
+              id="dialog-video"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <figcaption id="dialog-video-caption"></figcaption>
+        </figure>
       </div>
       <figure id="dialog-figure" class="dialog-figure">
   <img id="dialog-image" class="dialog-image" alt="" />
