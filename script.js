@@ -23,14 +23,14 @@ const projectData = {
   },
   micromix: {
     tag: 'Project manager · Embedded Systems · Biomedical',
-    title: 'MicroMix Cell Screening',
+    title: 'MicroOMix Cell Screening',
     subtitle: 'Embedded systems project · Télécom Physique Strasbourg · 2023–2024',
     metrics: [['200 kHz', 'sampling'], ['16-bit', 'ADC'], ['10×', 'speed gain']],
     body: '<h3>Context</h3><ul><li><strong>MicroOmiX</strong> develops laboratory cell-sorting systems whose acquisition electronics relied on a microcontroller costing around <strong>€1,000</strong>.</li><li>At roughly <strong>€80</strong>, the Arduino Portenta H7 offered hardware specifications that could theoretically deliver similar acquisition performance if used close to its full potential.</li></ul><h3>Engineering challenge</h3><ul><li>Could a <strong>low-cost embedded platform</strong> meet the requirements of high-throughput cell screening: up to <strong>200 droplets/s</strong> with <strong>200 kHz / 16-bit acquisition</strong>?</li></ul><h3>Implementation</h3><ul><li>Bypassed Arduino\'s standard acquisition functions and configured the <strong>STM32 timers and ADC registers</strong> directly.</li><li>Implemented <strong>circular double-buffer DMA</strong> for continuous high-speed acquisition.</li><li>Used <strong>shared memory between the M4 and M7 cores</strong> and optimized UART communication for real-time transfer to LabVIEW.</li></ul><h3>Result</h3><ul><li>Achieved stable <strong>200 kHz / 16-bit acquisition</strong> on the Portenta H7.</li><li>Integrated real-time visualization, storage and signal processing in <strong>LabVIEW</strong>.</li><li>Demonstrated the feasibility of a <strong>much lower-cost embedded prototype</strong> for the cell-screening acquisition pipeline.</li></ul><p><strong>Stack:</strong> C, Arduino Portenta H7, STM32 registers, ADC, DMA, shared memory, UART, LabVIEW.</p>',
     image: 'assets/evidence/micromix-results.png',
-    imageAlt: 'Final MicroMix interface, electronic test bench and recorded data',
+    imageAlt: 'Final MicroOMix interface, electronic test bench and recorded data',
     imageCaption: 'Portenta H7 architecture — High-speed acquisition using ADC, DMA and shared memory across the M4/M7 cores, with real-time PC communication.',
-    links: [['Read the final report', 'downloads/MicroMix-Final-Report.pdf'], ['Open the project presentation', 'downloads/MicroMix-Project-Presentation.pptx']]
+    links: [['Read the final report', 'downloads/MicroMix-Final-Report.pdf'], ['Open the project presentation', 'downloads/MicroMix-Final-Slides.pdf']]
   },
   tipe: {
     tag: 'Physics · Engineering',
